@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eavesdrop</name>
+    </assembly>
+    <members>
+        <member name="T:Eavesdrop.Certifier">
+            <summary>
+            Represents a manager for creating/destroying self-signed certificates.
+            </summary>
+        </member>
+        <member name="T:Eavesdrop.Eavesdropper">
+            <summary>
+            Represents a static HTTP/HTTPS local web proxy, that allows the ability to alter/block a request, or a response.
+            </summary>
+        </member>
+        <member name="E:Eavesdrop.Eavesdropper.RequestIntercepted">
+            <summary>
+            Occurs when a HTTP/HTTPS request has been intercepted before being sent to the remote endpoint.
+            </summary>
+        </member>
+        <member name="E:Eavesdrop.Eavesdropper.ResponseIntercepted">
+            <summary>
+            Occurs when a HTTP/HTTPS response has been intercepted before being received by the local endpoint.
+            </summary>
+        </member>
+        <member name="P:Eavesdrop.Eavesdropper.Certifier">
+            <summary>
+            Gets the certificate handler for this machine's user store.
+            </summary>
+        </member>
+        <member name="P:Eavesdrop.Eavesdropper.IsIntercepting">
+            <summary>
+            Gets a value that determines whether local web data is being intercepted.
+            </summary>
+        </member>
+        <member name="P:Eavesdrop.Eavesdropper.OverflowRequestTimeout">
+            <summary>
+            Gets or sets the amount of time in milliseconds that determines how long the maximum amount of requests rule is enforced before allowing more request to be processed.
+            </summary>
+        </member>
+        <member name="P:Eavesdrop.Eavesdropper.MaximumSimultaneousRequests">
+            <summary>
+            Gets or sets the maximum amount of intercepted requests to process at a time before intercepting more requests.
+            </summary>
+        </member>
+        <member name="M:Eavesdrop.EavesExtensions.GetUniqueFlags(System.Enum)">
+            <summary>
+            Reference: http://stackoverflow.com/questions/4171140/iterate-over-values-in-flags-enum
+            </summary>
+        </member>
+    </members>
+</doc>
